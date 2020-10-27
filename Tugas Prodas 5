@@ -1,0 +1,29 @@
+/* Muhammad Auliya'ur Rahman 20051397066 2020B */
+/* Tugas menghitung jumlah deret */
+
+#include <iostream>
+#include <math.h>
+
+using namespace std;
+
+int main()
+{
+    int jumlahsuku;
+    string pager = "===========================================================";
+
+    cout << endl << endl << pager << endl;
+    cout << pager << endl;
+    cout << "menghitung jumlah dari deret " ;
+
+    int jumlahderet = 0;
+
+    for(int i=3; i<=15; i+=4){
+        jumlahderet += i;
+        if(i<15){
+            cout << i << ", ";
+        }
+        if(i==15){
+            cout << i << endl;
+        }
+    } 
+}
