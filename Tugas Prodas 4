@@ -1,0 +1,30 @@
+/* Muhammad Auliya'ur Rahman 20051397066 2020B */
+/* Tugas membuat program menghitung jumlah 6 suku pertama */
+
+
+#include <iostream>
+#include <math.h>
+
+using namespace std;
+
+int main()
+{
+    int jumlahsuku;
+    string pager = "===========================================================";
+
+    cout <<pager<<endl<<pager<<endl;
+    cout << "Menghitung Jumlah 6 Suku Pertama" << endl <<"dari barisan ";
+
+    for(int i = 1; i <= 10; i++){
+        if(i<10){
+            cout << i <<"^3, ";
+        }
+        if(i<7){
+        jumlahsuku += pow(3, i);
+        }
+        if(i==10){
+            cout << i <<"^3 "<<endl;
+            cout<<endl<<"Jumlah 6 suku pertama Adalah "<<jumlahsuku<<endl;
+        }
+    }
+}
