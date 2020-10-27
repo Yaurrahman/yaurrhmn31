@@ -1,0 +1,60 @@
+/* Muhammad Auliya'ur Rahman 20051397066 2020B */
+/* Tugas membuat tabel perkaliani */
+
+#include <iostream>
+#include <math.h>
+
+using namespace std;
+
+int main()
+{
+    int jumlahsuku;
+    string pager = "===========================================================";
+    
+    cout << endl << pager << endl << pager << endl << "membuat tabel perkalian" << endl << pager << endl;
+
+    int h;
+    int n = 10;
+
+
+    for(int b = 0; b <= n; b++){
+
+            if(b == 0){
+                for(int i = 0; i <= n; i++){
+                        if(i==0){
+                            cout<<"     ";
+                        }
+                    if(i>0){
+                        cout << i;
+                        cout<<"    ";
+                    }
+                }
+            }
+
+            for(int k = 0; k <= n; k++){
+                    h = b*k;
+                    int tr = trunc(log10(h))+1;
+                    if(k == 0){
+                        if(b != 0){
+                            cout << b;
+                        }
+                        cout<<"    ";
+                    }
+                    if (h > 0 ){
+                        cout << h;
+                        if(tr == 1){
+                            cout<<"    ";
+                        }
+                        if(tr == 2){
+                            cout<<"   ";
+                        }
+                        if(tr == 3){
+                            cout<<"  ";
+                        }
+                    }
+
+            }
+            cout << endl << endl;
+
+    }
+}
